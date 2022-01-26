@@ -13,7 +13,7 @@ namespace AuthJwtDotnet.Extensions
             };
             result.AddRange(
                 user.Role.Select(role => new Claim(ClaimTypes.Role, user.Role))
-                );
+            );
             return result;
         }
     }
